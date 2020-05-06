@@ -1,0 +1,15 @@
+<p>не нажиматььььь <a href="http://yandex.ru/">сюда</a></p>
+
+<p>лучше <a href="http://yandex.ru/" target="_blank">сюда</a></p>
+
+<a href="javascript:sh()">Подробнее... (или любая другая надпись на ссылке, при клике на которую показывается весь скрытый изначально текст)</a><br />
+<div id="info" style="padding-top:15px;">
+ЗДЕСЬ ПИШЕМ ИЛИ ВСТАВЛЯЕМ ТЕКСТ, КОТОРЫЙ ДОЛЖЕН БЫТЬ ПО УМОЛЧАНИЮ СКРЫТЫМ И ПОКАЗЫВАТЬСЯ (РАСКРЫВАТЬСЯ) ТОЛЬКО ПРИ КЛИКЕ НА ССЫЛКУ "ПОДРОБНЕЕ", СО ВСЕМИ НУЖНЫМИ ТЕГАМИ НАПРИМЕР ПРИВЕТ, МИР!
+</div>
+<script type="text/javascript">
+sh();
+function sh() {
+obj = document.getElementById("info");
+if( obj.style.display == "none" ) { obj.style.display = "block"; } else { obj.style.display = "none"; }
+}
+</script>
